@@ -8,23 +8,26 @@
  */
 public class Counter {
 
+    private long value = 0;
+    
     /**
      * Get the current count.
      */
     public long getCount() {
-        return 0;
+        return (this.value);
     }
 
     /**
      * Increment the count by one.
      */
     public void increment() {
+        this.value++;
     }
 
     /**
      * Reset the count to zero.
      */
     public void reset() {
-
+        this.value = 0;
     }
 }
